@@ -1,0 +1,12 @@
+{
+  "name": "elara-properties-leads",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Vercel static site and serverless lead capture API for Elara Properties.",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "googleapis": "^140.0.1"
+  }
+}
