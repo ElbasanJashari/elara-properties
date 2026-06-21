@@ -650,3 +650,20 @@ h1 {
     animation-iteration-count: 1 !important;
   }
 }
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background: #25d366;
+  color: white;
+  padding: 14px 20px;
+  border-radius: 999px;
+  font-weight: 600;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+}
+
+.whatsapp-float:hover {
+  transform: translateY(-2px);
+}
