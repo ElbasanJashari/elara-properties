@@ -302,6 +302,7 @@ h1 {
 }
 
 .choice {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -315,6 +316,7 @@ h1 {
   color: white;
 
   cursor: pointer;
+  overflow: hidden;
 }
 
 .choice input {
