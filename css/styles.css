@@ -259,7 +259,7 @@ h1 {
   line-height: 1;
 }
 
-.lead-form label,
+.lead-form>label,
 .lead-form legend {
   display: block;
   margin: 0.85rem 0 0.35rem;
