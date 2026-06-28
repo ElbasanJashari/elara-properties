@@ -700,3 +700,44 @@ h1 {
   font-size: 0.85rem;
   opacity: 0.7;
 }
+
+.featured-properties {
+  padding: 80px 20px;
+}
+
+.property-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.property-card {
+  background: #1f1f1f;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.property-card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+
+.property-info {
+  padding: 20px;
+}
+
+.property-info h3 {
+  margin-top: 0;
+}
+
+.property-info p {
+  color: #bdbdbd;
+}
+
+.property-info strong {
+  display: block;
+  margin: 15px 0;
+  font-size: 1.2rem;
+}
