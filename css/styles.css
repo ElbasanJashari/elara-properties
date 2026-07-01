@@ -470,16 +470,28 @@ h1 {
 }
 
 .area-card {
+  position: relative;
+  min-height: 340px;
+
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
 
+  padding: 24px;
+
+  border-radius: 16px;
   overflow: hidden;
 
-  background: #fff;
-  border-radius: 18px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+  color: white;
 
-  transition: transform .25s ease, box-shadow .25s ease;
+  background-size: cover;
+  background-position: center;
+
+  transition: transform .25s ease;
+}
+
+.area-card:hover {
+  transform: translateY(-6px);
 }
 
 .area-card:hover {
@@ -487,23 +499,6 @@ h1 {
   box-shadow: 0 18px 40px rgba(0, 0, 0, .12);
 }
 
-.area-card:nth-child(2) {
-  background:
-    linear-gradient(180deg, rgba(20, 17, 15, 0.02), rgba(20, 17, 15, 0.78)),
-    linear-gradient(135deg, rgba(33, 27, 24, 0.96), rgba(15, 111, 109, 0.84));
-}
-
-.area-card:nth-child(3) {
-  background:
-    linear-gradient(180deg, rgba(20, 17, 15, 0.02), rgba(20, 17, 15, 0.78)),
-    linear-gradient(135deg, rgba(139, 79, 72, 0.92), rgba(201, 151, 60, 0.86));
-}
-
-.area-card:nth-child(4) {
-  background:
-    linear-gradient(180deg, rgba(20, 17, 15, 0.02), rgba(20, 17, 15, 0.78)),
-    linear-gradient(135deg, rgba(216, 225, 210, 0.72), rgba(33, 27, 24, 0.94));
-}
 
 .area-card.downtown {
   background:
@@ -531,18 +526,18 @@ h1 {
 
 .area-card span {
   display: block;
-  padding: 18px 20px 6px;
+  padding: 0;
+  margin-bottom: 10px;
 
+  font-size: 2rem;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.45rem;
-  line-height: 1.2;
 }
 
 .area-card p {
-  padding: 0 20px 20px;
   margin: 0;
+  padding: 0;
 
-  color: var(--muted);
+  color: #eee;
   line-height: 1.6;
 }
 
@@ -617,15 +612,18 @@ h1 {
 }
 
 @media (min-width: 680px) {
-  .nav-links {
-    display: flex;
-  }
 
   .trust-strip,
-  .benefit-grid,
-  .area-grid,
   .steps {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .benefit-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .area-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .benefit-grid {
