@@ -507,6 +507,30 @@ h1 {
     linear-gradient(135deg, rgba(216, 225, 210, 0.72), rgba(33, 27, 24, 0.94));
 }
 
+.area-card.downtown {
+  background:
+    linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .75)),
+    url("/images/downtown.jpg") center/cover;
+}
+
+.area-card.marina {
+  background:
+    linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .75)),
+    url("/images/marina.jpg") center/cover;
+}
+
+.area-card.business-bay {
+  background:
+    linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .75)),
+    url("/images/business-bay.jpg") center/cover;
+}
+
+.area-card.palm {
+  background:
+    linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .75)),
+    url("/images/palm.jpg") center/cover;
+}
+
 .area-card span {
   display: block;
   padding: 18px 20px 6px;
