@@ -462,13 +462,11 @@ h1 {
 .areas-section .section-copy,
 .area-grid {
   width: min(1180px, 100%);
-  margin-left: auto;
-  margin-right: auto;
-}
+  margin: 0 auto;
 
-.area-grid {
-  gap: 0;
-  background: var(--charcoal);
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.5rem;
 }
 
 .area-card {
@@ -634,9 +632,6 @@ h1 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .area-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
 
   .site-footer {
     flex-direction: row;
@@ -666,9 +661,6 @@ h1 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
-  .area-grid {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
 
   .area-card {
     min-height: 22rem;
