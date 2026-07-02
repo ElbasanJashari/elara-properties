@@ -465,7 +465,11 @@ h1 {
   padding-right: 1rem;
 }
 
-.areas-section .section-copy,
+.areas-section .section-copy {
+  width: min(1180px, 100%);
+  margin: 0 auto 2rem;
+}
+
 .area-grid {
   width: min(1180px, 100%);
   margin: 0 auto;
